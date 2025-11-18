@@ -5,15 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>net.roseboy</groupId>
+        <groupId>com.hz</groupId>
         <artifactId>classfinal</artifactId>
         <version>1.2.1</version>
     </parent>
 
     <artifactId>classfinal-fatjar</artifactId>
+    <name>classfinal-fatjar</name>
     <packaging>jar</packaging>
 
-    <name>classfinal-fatjar</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,11 +23,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>net.roseboy</groupId>
+            <groupId>com.hz</groupId>
             <artifactId>classfinal-core</artifactId>
-            <version>1.2.1</version>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -55,9 +55,9 @@
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <manifestEntries>
-                                        <Main-Class>net.roseboy.classfinal.Main</Main-Class>
-                                        <Premain-Class>net.roseboy.classfinal.Agent</Premain-Class>
-                                        <!--<Agent-Class>net.roseboy.classfinal.Agent</Agent-Class>-->
+                                        <Main-Class>com.hz.classfinal.Main</Main-Class>
+                                        <Premain-Class>com.hz.classfinal.Agent</Premain-Class>
+                                        <!--<Agent-Class>com.hz.classfinal.Agent</Agent-Class>-->
                                     </manifestEntries>
                                 </transformer>
                             </transformers>
